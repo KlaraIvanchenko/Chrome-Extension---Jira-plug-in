@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css"></link>
+		<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/displaying.js"></script>
+		<script src="js/calculationTime.js"></script>
+		<script src="js/method-applier.js"></script>
+		<script src="js/tab-extensions.js"></script>
+		<script src="js/projectdetail.js"></script>
+		<script src="js/actions.js"></script>
+		<script src="js/popup.js"></script>
+	</head>
+	
+	<body style="width:800px">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div id="mainView">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a data-toggle="tab" href="#projects">Projects</a>
+						</li>
+						<li>
+							<a data-toggle="tab" href="#users" data-target="#users">Users</a>
+						</li>
+						<li>
+							<span id="userUploading" class="uploading"><img src="images/ajax-loader.gif" width="20"  height="20"/> Loading users</span>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="projects" class="tab-pane fade in active">
+							<div id="projectsArea" class="list-group"></div>
+						</div>
+
+						<div id="users" class="tab-pane fade">
+							<div id="usersArea" class="list-group"></div>
+						</div>
+					</div>
+				</div>
+
+				<div style="display: none;" id="details">
+					<div id="detail" class="panel panel-default">
+						<a href="javascript:void(0)" id="back" class="btn btn-info pull-left" style="margin: 8px 5px 5px 5px;">Back</a>
+						<div class="panel-body"></div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a data-toggle="tab" href="#today">Today</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#menu1">Yesterday</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#menu2">Current Week</a>
+								</li>
+								<li>
+									<span id="tasksUploading" class="uploading"><img src="images/ajax-loader.gif" width="20"  height="20"/> Loading tasks</span>
+								</li>
+							</ul>
+
+							<div class="tab-content">
+								<div id="today" class="tab-pane fade in active">
+									<div id="todayIssues" class="list-group">
+										<div id="defaultLabel">No data available.</div>
+									</div>
+								</div>
+
+								<div id="menu1" class="tab-pane fade">
+									<div id="yesterdayIssues" class="list-group">
+										<div id="defaultLabel">No data available.</div>
+									</div>
+								</div>
+
+								<div id="menu2" class="tab-pane fade">
+									<div id="weekIssues" class="list-group">
+										<div id="defaultLabel">No data available.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
