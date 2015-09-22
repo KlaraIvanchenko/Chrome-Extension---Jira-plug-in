@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+	"name": "JIRA",
+	"version": "1.0",
+	"description": "Work with JIRA tickets",
+
+	"permissions": [
+		"https://toolchain.logicline.de/*",
+		"cookies"
+	],
+
+	"browser_action": {
+		"default_title": "LogicLine JIRA",
+		"default_icon": "images/favicon16x16.png",
+		"default_popup": "popup.html"
+	}
+
+	//"options_page": "options.html"
+}
